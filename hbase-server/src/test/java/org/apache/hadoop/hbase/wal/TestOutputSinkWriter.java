@@ -75,8 +75,10 @@ public class TestOutputSinkWriter {
     sink.startWriterThreads();
     Thread.sleep(3000L);
 
+    int maxIter = Integer.parseInt(System.getenv("MAX_ITER"));
+
     // run multiple times
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < maxIter; i++) {
       try {
         controller.checkForErrors();
       } catch (RuntimeException re) {
