@@ -42,7 +42,7 @@ import org.apache.hbase.thirdparty.com.google.common.collect.Lists;
  */
 @InterfaceAudience.Private
 public abstract class OutputSink {
-  private static final Logger LOG = LoggerFactory.getLogger(OutputSink.class);
+  public static final Logger LOG = LoggerFactory.getLogger(OutputSink.class);
 
   protected WALSplitter.PipelineController controller;
   protected EntryBuffers entryBuffers;
