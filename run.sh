@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-for n in {100..1000..10};
+for n in {10..100..10};
 do
   MAX_ITER="$n" mvn test -Dtest=TestOutputSinkWriter &> /dev/null
   sleep 1
