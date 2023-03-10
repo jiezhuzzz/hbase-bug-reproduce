@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "calls, log_size" >> output.csv
+echo "calls,log_size" >> output.csv
 
 for n in {10..100..10};
 do
